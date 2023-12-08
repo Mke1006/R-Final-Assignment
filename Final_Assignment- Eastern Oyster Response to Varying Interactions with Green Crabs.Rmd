@@ -1,0 +1,438 @@
+---
+title: "Final R Assignment Eastern Oyster Responses to Varying Levels of Interactions with Green Crabs"
+author: "Michaela Edwards"
+date: "2023-12-08"
+output: pdf_document
+---
+
+
+**ABSTRACT**
+
+
+
+Predators have a clear impact on prey populations through consumption. In addition, non-consumptive behaviors can affect the behavior and morphology of their prey. Invasive predators such as green crabs are known to consume sessile organisms such as eastern oysters and have vast impacts on their populations. Although consumptive impacts have been identified in this system, less is known regarding oysters' behavioral and morphological responses to the invasive predator. These influences on oysters are essential because they are an ecologically and economically important species. This study assessed the impact different sensory cues from green crabs have on juvenile eastern oysters. Oysters’ behavior was monitored over time using a sensor system that characterized their behavior over the duration of the experiment. Based on the outcome of this study, it was found that there was no significant difference between the varying levels of interaction. Although it was not significant according to a p-value of 0.3057 and 0.6588, an increase in gaping occurred with an increased interaction level with the Green crabs. Regarding morphological differences, oysters exposed to Green crabs scent but no physical contact experienced the greatest level of growth both in weight and length. However, these differences were insignificant compared to the control and other treatments. The results provide insight into the alternative implications growing green crab populations will have on eastern oysters' behavior, which in turn has the potential to impact oyster population dynamics. These implications have indirect consequences on coastal protection, water quality, and economic impact derived from oysters.\hspace{1cm}
+
+
+
+**INTRODUCTION**
+
+
+
+Eastern oysters are known as a staple in ecosystem quality and aquaculture within New England; however, in recent decades, oyster populations have been on the decline. Studies monitoring oyster populations in the past two decades have found that there was a 10% decline in natural oyster populations within the Great Bay from the 1980s to 2016 (Grizzle and Ward, 2016). Based on previous research, the decline of the oyster population was related to disease and harvesting from oyster farms in the area (Bricker et al., 2020). The importance of oysters is vast, and efforts have been established to protect and restore their population levels (Bersoza Hernández et al., 2018). For these efforts to be successful, all factors impacting oyster populations must be identified, and conclusions on how to combat these impacts must be established.
+
+
+
+There are many reasons why these efforts have been established to restore oyster reefs within New England. Eastern oysters are a keystone species that serve vast importance in many facets, from ecosystem services to aquaculture importance. Ecosystem services provided by the eastern oyster are worth $5500 to $99000 per hectare per year (Grabowski et al., 2012). Specifically, in New Hampshire, oysters were found to have a value of $3.7 million in water quality management for 2022 alone (Oysters, 2021). This value is due to oysters' ability to increase water quality through their filtering, which improves the habitat for countless other species, and their protection of coastlines from wave action, which in turn would cause coastal erosion. Along with Eastern oyster ecosystem services, they are an essential aquaculture species. Within the United States, the oyster industry alone was valued at $192 million in 2016 (NOAA Fisheries, n.d.). In light of the considerable economic worth and the ecosystem services attributed to oysters, it is imperative to analyze what environmental factors hold negative impacts on the health and growth of this species. Oysters hold many other essential roles as well outside of economic value in New England, such as cleaning water and protecting coastlines. Because of the oyster's vast importance, precautions must be taken to protect them. 
+
+
+
+One factor that affects Eastern oysters within the Gulf of Maine region is their predators. A major predator of Eastern oysters is European green crabs. European green crabs were introduced into the Gulf of Maine from Europe in the mid-1800s (Griffen and Riley, 2015). Due to their flexible feeding behavior and acclivity towards warmer climates, green crab populations are flourishing. This is projected to impact their prey species, particularly the sessile organisms. As the crab population increases, they will begin to consume sessile organisms at a higher rate, including the Eastern oyster. There’s a potential for the oyster population to be severely reduced by consumption, but green crabs might affect oysters through various means beyond just consuming them. This study aims to identify other ways the European green crab population will affect Eastern oysters outside of direct consumption. 
+
+
+
+This study looks at how different types of interactions affect the gaping behavior of oysters, from chemical cues to physical interaction. It has been found that Pacific oysters use an organ called the osphradium to sense chemical cues in their surrounding waters (Rato et al., 2022). It is reasonable to associate that the Eastern oyster also uses this organ in a similar manner for cue perception. Based on the knowledge regarding oysters' osphradium, oysters are perceived to have the ability to identify predatory chemical cues within their environments. This study will have two crab treatments: one, where the oysters will rely on their osphradium to identify the scent of the green crab in the surrounding environment, and the second treatment is tactile, where the crab can physically interact with the oyster whilst emitting a chemical cue into the environment. 
+
+
+
+With the recognition that green crabs consume oysters, we wished to identify the behavioral response, specifically in juvenile oysters, which are at a higher risk of consumption. Although consumption will not be prevented by analyzing behavior, doing this research can bring to light other ways increased green crab population size will impact the eastern oyster and, in turn, the industry that heavily relies on them. 
+Limited resources are found in regard to oysters’ behavioral responses to the invasive green crab. There have been studies focused on physiological responses to predatory species, such as increasing shell strength to limit predation (Newell et al., 2007). However, monitoring behavioral responses can allow us to gain knowledge of the first responses of oysters to predatory species. Oysters possess the capacity to adapt to an alternative mode of reparation, and it is anticipated that they can effectively cope with brief encounters with their predators as a protective response by sealing their shells. Oyster closure has been identified in response to predators using images and videos (Carroll and Clements, 2019). However, employing photographic software for behavioral identification is a labor-intensive procedure, and it introduces the potential for observer bias, given the often subtle degree to which oysters exhibit gaping behavior. Within this study, behavioral response will be monitored using Radiometeric Hall Effect sensors, eliminating observer bias. This study aims to identify what behavioral responses ensue after prolonged exposure to green crabs at varying levels of interaction whilst also analyzing physiological changes. The outcome is anticipated to be as the interaction level with crabs intensifies, oysters will more frequently transition into a closed state. Within this study, potential links between behavioral and physiological responses can be established, enabling us to predict the physiological alterations that may ensue solely through behavioral monitoring. Based on these findings, oyster farmers and conservation efforts towards oyster reefs can identify the most profound next steps to take in combating the projected increase in the green crab population. \hspace{2cm}
+
+
+
+**METHODS**\hspace{1cm}
+
+
+
+*Collection of Experimental Organisms:*
+
+
+Oysters were obtained from Fox Point Oysters, an oyster farm in Little Bay, NH. Fifteen oysters were randomly selected to be used in the study. The green crabs were collected off the peer at the Coastal Marine Laboratory in New Castle, NH. They were collected using a lobster cage that was continuously checked. The cage remained off the peer for the duration of the study to ensure crab replacements were available.\hspace{1cm}
+
+
+*Identifying and Measuring Oysters:*
+
+
+Each oyster was identified with a  honeycomb tag that was glued onto them, and a 60g magnet was glued onto the bottom (left) shell. The oysters were each weighed. Both wet and buoyant weights were collected in grams. Oysters were also measured to identify growth rates over the duration of the experiment. The maximum lengths of each oyster from umbo to bill were measured in millimeters using forceps. \hspace{1cm}
+
+
+*Adhering the Monitoring System to the Organisms (Oysters):*
+
+
+After measurements were recorded, the Radiometric Hall Effect sensors were glued to the oysters' top right shells. They were glued to the shells using a superglue adhesive, and the sensor number was matched to the oyster ID number. A magnet was glued opposite of the sensor. The distance change between the sensor and magnet is how oyster gaping behavior is monitored. Once the oysters were attached to the sensors, each individual was placed into separate tanks that contained the treatments the oyster would experience for two months. \hspace{1cm}
+
+
+*Experimental Design:*
+
+
+Fifteen oysters were sectioned into scent, tactile, and control groups. Each treatment held a green crab, but there were limits to some crab's ability to interact with the oysters. The scent group had a crab inside a smaller 6-inch plastic tank which had slits at the top to allow water to transfer from the crab cage to the larger tank holding an oyster, but there was no physical interaction between the crab and the oyster. The scent of the crab will disperse into the water, allowing the oyster to experience the chemical cue, referred to as scent in this paper, of a green crab in the water. The smaller tank will be zip-tied to ensure the crabs will not escape, and there will be no physical interaction with the oyster. For the tactile group, the only restriction enforced on the crabs was banding their claws so they were unable to consume the oysters. Other than the bands, the crabs could be in physical contact with the oysters. Each oyster will have its own tank to ensure treatments and exposure to crabs are equal among the individuals within each group. 
+
+```{r, echo=FALSE, out.width='100%'}
+knitr::include_graphics("Crab_Experimental_Design.png")
+```
+**Depiction: Experimental Design**
+
+
+This graphic depicts the oyster and green crab system. The red-capped cages represent the smaller cages in which the scent crabs were placed to prevent them from physically interacting with the oysters. There were red-capped cages within each tank to keep the experiment uniform across all groups. However, this was not included in the depiction to eliminate confusion between groups. The black lines coming off the oysters are the Hall Effect sensors used to monitor the oysters gaping behavior. The manifold is depicted between the 15 tanks, including valves and flow directionality. The larger gray squares surrounding the smaller blue rectangles represent the large tub in which the experiment was run, allowing for the overflow of the experimental tanks during water exchange. The entirety of this set-up was in the greenhouse at Jackson Estuarine Laboratory located at Adam’s Point, Great Bay, NH.\hspace{1cm}
+
+
+*Water Flow and Testing:*
+
+
+A manifold expelled water to 15 tanks from the same source, the Great Bay in New Hampshire. There was a pipe filter at the beginning of the manifold and mesh on the manifold spigots. Throughout the two-month experiment, the water quality was recorded every other day using a water quality sampling and monitoring multiparameter meter, otherwise known as a YSI, and nitrates, nitrites, and ammonia were tested using a water test kit. Because this is a flow-through tank acquiring water directly from the Great Bay, no shellfish diet or other food for the oysters will be added to the system. To ensure there is food in the water coming from the Bay, we checked the chlorophyll levels three times throughout the experiment, all collected at high tide, to get the most accurate readings.\hspace{1cm}
+
+
+*Feeding Experiment Subjects:*
+
+
+Oysters were not fed because they are filter feeders and constantly get a fresh supply of water directly from the estuary; the crabs needed a regular feeding schedule. They were fed either Blue Mussels or North Atlantic Ribbed Mussels every ten days throughout the duration of the study. When feeding the crabs, the Mussels were opened and dissected. The tissue was removed from the shell and given to the crabs because they were banded; hence, they could not access the tissue on their own. After dissecting the mussels, the tissue was placed in front of the crabs in their respective tanks. Mussel tissue was also placed in the control tanks for the duration it took all the crabs to consume their food. After consumption, the mussels placed in the control groups were removed and discarded. During feeding, due to the disturbance, the sensor data stream was paused, and once we were done interacting with the system for the day, the data stream was resumed. These pause times were identified on the data sheet along with water parameter recorders and when the crabs were fed.\hspace{1cm}
+
+
+*Data Analysis:*
+
+
+All data analysis was conducted using R programming system. The data was collected directly from the sensor system as a text file. Initial cleaning of the data was conducted to merge broken data lines from the raw data text file by removing blank lines and using an ifelse statement to determine which lines were broken and when to append them to the above line. They were written to a “fixed” text file, which was then split into 2 CSV files containing the data from the first month of data, August and the last month of data, October. This was done due to a drift in voltage values recorded across all sensors over the month of September. Further analysis needs to be conducted on this portion of data to account for the non-linear drift. The data was recorded using voltage, meaning the exact values did not provide insight into oyster activity it was the change in those voltage values that held merit. The sensor had broken during the study, and when a sensor broke, the voltage either spiked or receded dramatically. Due to this knowledge, when a sensor recorded a voltage above 800 or below 500, it was transformed into NA for the duration of those numeric measurements. Then, the data was normalized, setting the numeric X vectors identified across all oysters to fall between 0 and 1 based on their relation to the minimum and maximum voltages recorded and how the sensor was oriented, giving the change in voltage, which translates to the change in each oyster’s gape. Using this gaping, further investigations were done between the treatments to identify if there was any significant difference. An ANOVA was run on the percent of time spent open for each oyster, with the ANOVA analyzing the statistical difference between the groups. This was done on the data from the beginning and the end of the study to identify if there was a significant difference from the start or if significance occurred after exposure to their treatments for two months. \hspace{2cm}
+
+
+
+**RESULTS**\hspace{1cm}
+
+
+
+*Data Cleaning* 
+
+
+Throughout the data cleaning process a repository was created which contains all the cvs used from the oyster experiment. Data cleaning and graphing code can be found within the repository both are located within R Markdown files found on github through the following link https://github.com/Mke1006/R-Final-Assignment.git. 
+
+
+
+*Oyster Gaping*
+
+
+Oyster gaping was set to zero, and one which represented fully closed and fully open, respectively, with this normalization applied to all 15 oysters separately (fig. 1, fig. 2). Oyster gaping across treatments at the beginning of the study shows an average difference between control, scent and tactile where tactile was open the greatest amount of time. Still, the differences are not significant, with a p-value of 0.3057 (fig. 4). During the end of the study, the relation of the tactile group being open the greater amount of time and the control being open the least amount of time remained the same yet no significant difference between the treatments remained with a p-value of 0.6588 (fig. 5). Overall oysters showed a greater amount of time open for tactile group and variation within the tactile and control group decreased from the beginning to the end of the study. The variation within the scent group increased from the beginning to the end of the study, showing an opposite trend when compared to the two other groups.\hspace{1cm}
+
+
+*Morphological Changes Throughout the Study*
+
+
+Within the duration of the study, the juvenile oysters shifted in both their weight and length. These changes were analyzed by treatment to identify if any relation between treatment and morphology presented itself. For weight change over the duration of the experiment, the scent group had the greatest weight change, and the tactile group had the least weight change (fig. 6). However, according to the error bars in Figure 6, there is no significance in weight between the three treatments due to their overlap. Length change over the duration of the experiment showed the scent group with the highest growth and the control had the least shell growth (fig. 7). However, based on the error bars in Figure 7, there is much overlap, relaying that there is no significant difference between the oyster groups when it comes to length growth.\hspace{3cm}
+
+
+
+```{r, include=FALSE}
+library(pacman)
+library(ggplot2)
+library(tidyverse)
+library(dplyr)
+library(multcompView)
+library(viridis)
+p_load(lubridate, ggplot2, tidyverse,lme4,car,lmtest,gdata,rMR,emmeans,DHARMa,MuMIn, naniar)
+```
+
+```{r graph theme, include=FALSE}
+theme.oyster<-  theme(panel.border=element_rect(color="Black", size=.8,fill=NA),
+  panel.background = element_rect(fill="White"),
+  panel.grid.major=element_blank(), 
+  panel.grid.minor=element_blank(),
+  axis.line=element_blank(),
+  axis.text=element_text(color="Black",size=20),
+  axis.title=element_text(color="Black",size=20),
+  strip.background = element_blank(),
+  strip.text.x = element_text(size = 20, color = "black"),
+  strip.text.y = element_text(size = 20, color = "black"),
+  text = element_text(size=20, color="black", family="serif"))
+```
+
+```{r data upload august, include=FALSE}
+d0<-read.csv("august-16 to aug-28.csv", header=T,na.strings="")
+a<-read.csv("treatment_assignment.csv", header=T,na.strings="")
+```
+
+```{r normalizing the data August, include=FALSE}
+#normalize the voltage data
+reverse_normalize <- function(X) {
+  oys <- ifelse(X < 500 | X > 800, NA, X)
+  (oys - max(oys, na.rm = TRUE)) / (min(oys, na.rm = TRUE) - max(oys, na.rm = TRUE))
+}
+# seperate out the oyster columns
+oysters <- grep('^oyst', colnames(d0), value = TRUE)
+# Apply the reverse normalization function to oyster columns
+d1 <- apply(d0[, oysters], 2, reverse_normalize)
+# Combine the normalized results into a new data frame
+d1 <- data.frame(d1)
+# add gape to oyster columns
+colnames(d1) <- paste(oysters, 'gape', sep = "_")
+# Combine d1 back into d0
+d0 <- data.frame(cbind(seconds = d0$seconds, Date_Time = mdy_hms(paste(d0$Date, d0$Timestamp, sep = " ")), d1))
+# view dataset
+head(d0)
+str(d0)
+#long format
+d0_long<- gather(d0, oyster_identity, gaping, oyster.1_gape:oyster.15_gape, factor_key=TRUE)
+#putting treatment and long data together
+df_long<-merge(d0_long, a, all=T)
+df_long<-df_long %>% 
+  filter(!is.na(gaping), !is.na(Crab_treatment)) %>% 
+  mutate(Hours=as.numeric(seconds)/60)
+str(df_long)
+```
+
+```{r graphing august line graph, echo=FALSE, fig.width= 10, fig.height=20, dpi=300, fig.cap="Oyster gaping over the first month of the study from August 16th to August 31st. Voltage data was normalized, leading to 1 on the y-axis representing fully open for that individual oyster, zero representing fully closed, and the range between them representing opening and closing behavior. Starting from the top of the figure is oyster number 1, and at the bottom is oyster number 15, all in numerical order from top to bottom. The colors represent the treatment that the individual was exposed to during the study. A blank in the data can be found on August 19th, when the monitoring device restarted."}
+df_long %>%
+  ggplot(aes(x = Date_Time, y = as.numeric(gaping), group = as.factor(Crab_treatment))) +
+  geom_line(aes(color = as.factor(Crab_treatment))) +
+  theme_bw() + theme(legend.position = "right") +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) +
+  xlab("") +
+  ylab("gaping") +
+  theme.oyster +
+  scale_color_manual(values = c("lightblue", "blue", "black")) +
+  guides(color = guide_legend(title = "Crab_treatment")) +
+  facet_grid(oyster_identity ~ .)
+```
+
+```{r data upload october, include=FALSE}
+d02<-read.csv("Oct-1 to Oct-13.csv", header=T,na.strings="") 
+a<-read.csv("treatment_assignment.csv", header=T,na.strings="")
+```
+
+```{r normalize the data October, include=FALSE}
+reverse_normalize <- function(X) {
+  oys <- ifelse(X < 500 | X > 800, NA, X)
+  (oys - max(oys, na.rm = TRUE)) / (min(oys, na.rm = TRUE) - max(oys, na.rm = TRUE))
+}
+
+# Extract oyster columns
+oysters <- grep('^oyst', colnames(d02), value = TRUE)
+# Apply the reverse normalization function to oyster columns
+d2 <- apply(d02[, oysters], 2, reverse_normalize)
+# Combine the normalized results into a new data frame
+d2 <- data.frame(d2)
+# Rename columns to indicate normalized values
+colnames(d2) <- paste(oysters, 'gape', sep = "_")
+# Combine the results back into the original data frame
+d02 <- data.frame(cbind(seconds = d02$seconds, Date_Time = mdy_hms(paste(d02$Date, d02$Timestamp, sep = " ")), d2))
+# Continue with the rest of your script using d02 as needed
+head(d02)
+str(d02)
+#get it into long format
+d02_long<- gather(d02, oyster_identity, gaping, oyster.1_gape:oyster.15_gape, factor_key=TRUE)
+
+#merge the new long data with the Crab_treatment dataframe for analysis and graphing
+df2_long<-merge(d02_long, a, all=T)
+df2_long<-df2_long %>% 
+  filter(!is.na(gaping), !is.na(Crab_treatment)) %>% 
+  mutate(Hours=as.numeric(seconds)/60)
+str(df2_long)
+```
+
+```{r graphing october line graph, echo=FALSE, fig.width= 10, fig.height=20, dpi=300,  fig.cap="The gaping behavior over time for each individual oyster during the month of October from October 1st to October 13th when the study concluded. The data was normalized for each individual oyster, ranging from 1, fully open for that individual, to 0, fully closed for that individual. The range between 0 and 1 represents the oyster's opening and closing behavior. The color represents the treatment that an individual was exposed to, and from top to bottom, oyster individuals are 1 through 15."}
+df2_long %>%
+  ggplot(aes(x = Date_Time, y = as.numeric(gaping), group = as.factor(Crab_treatment))) +
+  geom_line(aes(color = as.factor(Crab_treatment)))+
+  theme_bw() + theme(legend.position = "right") +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) +
+  xlab("") +
+  ylab("gaping") +
+  theme.oyster +
+  scale_color_manual(values = c("lightblue", "blue", "black")) +
+  guides(color = guide_legend(title = "Crab_treatment")) +
+  facet_grid(oyster_identity ~ .)
+```
+
+```{r setting up for august box plot, include=FALSE}
+percentage_above_0.25_August <- df_long %>%
+  group_by(Crab_treatment, oyster_identity) %>%
+  summarize(Percentage_of_Time_Spent_Open= sum(gaping > 0.25, na.rm = TRUE) / n()) %>%
+  mutate(Percentage_of_Time_Spent_Open= Percentage_of_Time_Spent_Open* 100)
+head(percentage_above_0.25_August)
+percentage_above_0.25_August$Crab_treatment <- as.factor(percentage_above_0.25_August$Crab_treatment)
+levels(percentage_above_0.25_August$Crab_treatment)
+
+ANOVA_on_Gaping_august <- aov(Percentage_of_Time_Spent_Open ~ Crab_treatment, data = percentage_above_0.25_August)
+
+Anova_results <- anova(ANOVA_on_Gaping_august)
+print(Anova_results)
+
+# Tukey's test
+tukey <- TukeyHSD(ANOVA_on_Gaping_august)
+print(tukey)
+
+
+cld <- multcompLetters4(ANOVA_on_Gaping_august, tukey)
+print(cld)
+
+August_percent_open <- group_by(percentage_above_0.25_August, Crab_treatment) %>%
+  summarise(mean=mean(Percentage_of_Time_Spent_Open), quant = quantile(Percentage_of_Time_Spent_Open, probs = 0.75)) %>%
+  arrange(desc(mean))
+
+# extracting the compact letter display and adding to the Tk table
+cld <- as.data.frame.list(cld$Crab_treatment)
+August_percent_open$cld <- cld$Letters
+```
+
+```{r box plot august with ANOVA, echo=FALSE, fig.cap="Crab treatment relation to the percentage of time spent open for each oyster within their respective groups. A threshold of 0.25 is set for identifying openness for each oyster due to sensor noise interference. The percentage of time open is in relation to the amount of time throughout the dataset for August that each oyster was recorded above 0.25, showing a gaping event. Averages across the group are used to identify the relation between treatments. August dataset has a p-value of 0.3057 for comparison between treatments."}
+
+ggplot(percentage_above_0.25_August, aes(Crab_treatment, Percentage_of_Time_Spent_Open)) + 
+  geom_boxplot(aes(fill = Crab_treatment), show.legend = FALSE) +
+  geom_point( color = "black") +
+  labs(x="Treatment Group", y="Percentage of Time Spent Open") +
+  theme_bw() + 
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) +
+  geom_text(data = August_percent_open, aes(x = Crab_treatment, y = quant, label = cld), size = 3, vjust=-1, hjust =-1)+
+  scale_fill_brewer(palette = "Blues")
+```
+
+```{r box plot for october, include=FALSE}
+percentage_above_0.25_October <- df2_long %>%
+  group_by(Crab_treatment, oyster_identity) %>%
+  summarize(Percentage_of_Time_Spent_Open= sum(gaping > 0.25, na.rm = TRUE) / n()) %>%
+  mutate(Percentage_of_Time_Spent_Open= Percentage_of_Time_Spent_Open* 100)
+head(percentage_above_0.25_October)
+percentage_above_0.25_October$Crab_treatment <- as.factor(percentage_above_0.25_October$Crab_treatment)
+levels(percentage_above_0.25_October$Crab_treatment)
+
+ANOVA_on_Gaping_october <- aov(Percentage_of_Time_Spent_Open ~ Crab_treatment, data = percentage_above_0.25_October)
+
+Anova_results2 <- anova(ANOVA_on_Gaping_october)
+print(Anova_results2)
+
+# Tukey's test
+tukey <- TukeyHSD(ANOVA_on_Gaping_october)
+
+
+cld <- multcompLetters4(ANOVA_on_Gaping_october, tukey)
+
+October_percent_open <- group_by(percentage_above_0.25_October, Crab_treatment) %>%
+  summarise(mean=mean(Percentage_of_Time_Spent_Open), quant = quantile(Percentage_of_Time_Spent_Open, probs = 0.75)) %>%
+  arrange(desc(mean))
+
+# extracting the compact letter display and adding to the Tk table
+cld <- as.data.frame.list(cld$Crab_treatment)
+October_percent_open$cld <- cld$Letters
+```
+
+```{r october box plot, echo=FALSE, fig.cap="Time spent open in relation to crab treatments over the October dataset. A threshold of 0.25 was set due to sensor noise interference. The percentage of time spent open in relation to the amount of time within the dataset of each oyster was recorded above 0.25, representing a gaping behavior. Each data point within the graph represents the percentage for each of the 15 oysters. October dataset has a p-value of 0.6588, providing no significant variation between the treatment groups."}
+ggplot(percentage_above_0.25_October, aes(Crab_treatment, Percentage_of_Time_Spent_Open)) + 
+  geom_boxplot(aes(fill = Crab_treatment), show.legend = FALSE) +
+  geom_point( color = "black") +
+  labs(x="Treatment Group", y="Percentage of Time Spent Open") +
+  theme_bw() + 
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) +
+  geom_text(data = October_percent_open, aes(x = Crab_treatment, y = quant, label = cld), size = 3, vjust=-1, hjust =-1)+
+  scale_fill_brewer(palette = "Blues")
+```
+
+```{r reading measurement data, include=FALSE}
+weights <- read.csv("oyster_crab_weight_measurements.csv", header=T, na.strings = "")
+```
+
+```{r graphing weights, echo=FALSE, fig.cap="Weight change in grams over the duration of the two month study based on measurements taken at the beginning and end of the experiment. A point on the graph represents each oyster's weight change, and their IDs are labeled to the right with the numbers representing which oyster they signify. Averages were taken for each group to allow comparisons between weight and treatment. Standard deviation error bars represent no significant difference between groups and variation within each group."}
+average_weights <- weights %>%
+  group_by(Treatment) %>%
+  summarize(weight_change_g = mean(wet_g_end - wet_g_start, na.rm = TRUE))
+
+# Calculate the mean and standard deviation for each Treatment group for error bars
+summary_data <- weights %>%
+  group_by(Treatment) %>%
+  summarise(
+mean_value = mean(weight_change_g),
+sd_value = sd(weight_change_g)
+  )
+# Merge the summary data back to the original dataset
+average_weights <- merge(average_weights, summary_data, by = "Treatment")
+#graph
+average_weights %>%
+  ggplot(aes(x = Treatment, y = weight_change_g)) +
+  geom_col(alpha = 0.7, linewidth = 3) +
+  geom_errorbar(aes(ymin = mean_value - sd_value, ymax = mean_value + sd_value), width = 0.2) +
+  geom_point(data = weights, aes(x = Treatment, y = weight_change_g, color = Oyster.ID), size = 3) +
+  labs(x = "Treatment", y = "Average Weight Change Throughout Experiment (g)", color = "Oyster ID") +
+  theme_classic()
+```
+
+```{r oyster length data upload, echo=FALSE, fig.cap="Length change over the duration of the two-month study based on forceps length measurements from the beginning and end of the study. Length change is grouped based on treatment, with averages for each group acquired to identify possible relations between length and treatment. Each point represents the change measured for an individual oyster from the start to the end of the experiment. Standard deviation error bars represent no significant difference between groups and variation within each group."}
+oyster_length <- read.csv("oyster_crab_weight_measurements.csv", header=T, na.strings = "")
+#making column of length difference
+oyster_length$length_change_mm <- oyster_length$entire.oyster_mm_end - oyster_length$entire.oyster_mm_start
+
+#grouping length change by treatment
+average_length_change <- oyster_length %>%
+  group_by(Treatment) %>%
+  summarize(length_change_mm = mean(entire.oyster_mm_end - entire.oyster_mm_start, na.rm = TRUE))
+#summarizing grouped data
+summary_data_2 <- oyster_length %>%
+  group_by(Treatment) %>%
+  summarise(
+mean_value2 = mean(length_change_mm),
+sd_value2 = sd(length_change_mm)
+  )
+
+average_length_change <- merge(average_length_change, summary_data_2, by = "Treatment")
+
+#length change graph
+average_length_change %>%
+  ggplot(aes(x = Treatment, y = length_change_mm)) +
+  geom_col(alpha = 0.7, linewidth = 3) +
+  geom_errorbar(aes(ymin = mean_value2 - sd_value2, ymax = mean_value2 + sd_value2), width = 0.2) +
+  geom_point(data = oyster_length, aes(x = Treatment, y = length_change_mm, color = Oyster.ID), size = 3) +
+  labs(x = "Treatment", y = "Average Length Change Throughout Experiment (mm)", color = "Oyster ID") +
+  theme_classic()
+```
+
+\pagebreak
+
+**DISCUSSION**
+
+Based on this study and the results, we can determine that there is no significant impact on oyster behavior or morphological changes regarding non-lethal interactions with green crabs. This study was conducted over a two month time frame, which would allow vast insight into oysters' behaviors in response to green crabs. With the results of this study in hand, we can determine that there is no significant impact on the health of eastern oysters in regard to non-lethal influences from green crabs. This information can ease worries regarding rising green crab populations and their impacts on oyster populations. Although this study provides ease regarding the implications of non-lethal impacts, the influence of green crab populations on oysters through consumption is still prevalent (Poirier et al., 2017). However, if measures are taken to keep oysters physically protected from green crabs, then theoretically, their population levels should not be at risk. 
+
+
+
+Even though a significant difference was not noted, a trend held true throughout the study: juvenile eastern oysters within the tactile group were open the highest percentage of time at both the beginning and end of the study. This may show a relationship regarding physical interaction between oysters and green crabs' and how oysters combat the close proximity to a predator for a long duration. These results were surprising because past studies conducted under shorter periods have led to the belief that oysters when in physical contact with predators, specifically crabs, are close for protection even when the interaction is non-lethal (Carroll and Clements, 2019). The results of this study have the ability to provide us with further insight into how oysters are responding to crabs over long periods of time. Oysters have been monitored, analyzing their gaping responses to crabs for short periods; however, when the predator is constant, the oysters switch their behavioral strategy. Further investigation focusing on the advantages of staying open more with increased predatory presence is essential for further understanding. 
+
+
+
+With the gaping of the tactile group being the highest at both the beginning and end of the study, identifying morphological changes can lead to further insight regarding juvenile oysters' energy allocation. For this study, the tactile group of juvenile oysters had the lowest weight change over the two months. However, they had the greatest length change. The scent group was close behind regarding length change and had the greatest weight change throughout the study. Weight and length change of a  high degree in the scent group shows that there is an increase in growth rate for both facets even though it is not significantly different due to the low sample size. Previous studies have identified this relation between predatory cues and oyster growth, and efforts are being implemented to increase oyster survival in reef restoration efforts (Belgrad et al., 2021). However, looking closer at the tactile group provides exciting insight into the oyster's energy allocation. The tactile group had the lowest weight change throughout the study. Still, they had the most shell growth, which supports the idea that when there is higher interaction with green crabs, the oysters devote their energy toward shell growth as a means of defense rather than tissue growth. This can serve the oyster protection by presenting themselves as larger, which may deter the crab from feasting on them and settling on a smaller more accessible food source nearby (Pickering and Quijón, 2011). The oyster could be increasing their shell density, which in turn would protect those oysters by making it more difficult for the predator to crush them. However,  more investigation needs to be conducted to fully grasp whether this is what they do during shell growth. 
+
+
+
+The behavioral outcome of this study was different than previous studies and predictions expected. Due to the outcome revealing a different result in oyster behavior, further research needs to be conducted to identify the rationale behind the oysters' actions and studies to narrow in on exact behavioral responses. Green crabs are known to present higher activity levels in relation to tide and time of day (Young and Elliott, 2019). Due to these activity levels of green crabs, further investigation into when the oysters in each group were most active would be informative. To go along with the timing of activity, further investigation is needed into why oysters within the control and treatment groups became more unified across their group, but the scent group showed the opposite response. With the unification and timing under investigation, activity level in the oysters versus the percentage of time open would identify energy exertion towards gaping and possible defenses from crabs. Lastly, based on this study's finding, further investigation into how growth speeds in juvenile oysters, both length and weight, affect eastern oyster health and possible repercussions from sped-up growth.
+
+**REFERENCES**
+Audet, D., Davis, D. S., Miron, G., Moriyasu, M., Benhalima, K., & Campbell, R. (2003). Carroll, J. M., & Clements, J. C. (2019). Scaredy-Oysters. Southeastern Naturalist, 18(3), N21-N26.
+
+
+Belgrad, B. A., Combs, E. M., Walton, W. C., & Smee, D. L. (2021). Use of predator cues to bolster oyster resilience for aquaculture and reef restoration. Aquaculture, 538, 736553.
+
+
+Bersoza Hernández, A., Brumbaugh, R. D., Frederick, P., Grizzle, R., Luckenbach, M. W., Peterson, C. H., & Angelini, C. (2018). Restoring the eastern oyster: how much progress has been made in 53 years?. Frontiers in Ecology and the Environment, 16(8), 463-471.
+
+
+Bricker, S. B., Grizzle, R. E., Trowbridge, P., Rose, J. M., Ferreira, J. G., Wellman, K., ... & Tedesco, M. A. (2020). Bioextractive removal of nitrogen by oysters in Great Bay Piscataqua River estuary, New Hampshire, USA. Estuaries and Coasts, 43, 23-38.
+
+
+Carroll, J. M., & Clements, J. C. (2019). Scaredy-Oysters. Southeastern Naturalist, 18(3), N21-N26. Geographical expansion of a nonindigenous crab, Carcinus maenas(L.), along the Nova Scotian shore into the southeastern Gulf of St. Lawrence, Canada. Journal of Shellfish Research, 22(1), 255-262.
+
+
+Grabowski, J. H., Brumbaugh, R. D., Conrad, R. F., Keeler, A. G., Opaluch, J. J., Peterson, C. H., ... & Smyth, A. R. (2012). Economic valuation of ecosystem services provided by oyster reefs. Bioscience, 62(10), 900-909.
+
+
+Griffen, B. D., & Riley, M. E. (2015). Potential impacts of invasive crabs on one life history strategy of native rock crabs in the Gulf of Maine. Biological Invasions, 17, 2533-2544.
+
+
+Grizzle, R. E., & Ward, K. (2016). Assessment of recent eastern oyster (Crassostrea virginica) reef restoration projects in the Great Bay Estuary, New Hampshire: planning for the future.
+
+
+NOAA Fisheries, N. (n.d.). | noaa fisheries. Retrieved November 1, 2023, from https://www.fisheries.noaa.gov/species/eastern-oyster/aquaculture
+
+
+Oysters. (2021, April 28). New Hampshire Sea Grant. https://seagrant.unh.edu/our-work/aquaculture/oysters
+Pickering, T., & Quijón, P. A. (2011). Potential effects of a non-indigenous predator in its expanded range: assessing green crab, Carcinus maenas, prey preference in a productive coastal area of Atlantic Canada. Marine Biology, 158, 2065-2078.
+
+
+Poirier, L. A., Symington, L. A., Davidson, J., St-Hilaire, S., & Quijón, P. A. (2017). Exploring the decline of oyster beds in Atlantic Canada shorelines: potential effects of crab predation on American oysters (Crassostrea virginica). Helgoland Marine Research, 71, 1-14.
+
+
+Rato, A., Joaquim, S., Matias, D., & Hubbard, P. C. (2023). What do oysters smell? Electrophysiological evidence that the bivalve osphradium is a chemosensory organ in the oyster, Magallana gigas. Journal of Comparative Physiology A, 209(3), 391-401.
+
+
+Young, A. M., & Elliott, J. A. (2019). Life history and population dynamics of green crabs (Carcinus maenas). Fishes, 5(1), 4.
