@@ -1,0 +1,267 @@
+---
+title: "R Final Results Section"
+author: "Michaela Edwards"
+date: "2023-12-08"
+output: pdf_document
+---
+
+```{r, include=FALSE}
+library(pacman)
+library(ggplot2)
+library(tidyverse)
+library(dplyr)
+library(multcompView)
+library(viridis)
+p_load(lubridate, ggplot2, tidyverse,lme4,car,lmtest,gdata,rMR,emmeans,DHARMa,MuMIn, naniar)
+```
+
+```{r graph theme, include=FALSE}
+theme.oyster<-  theme(panel.border=element_rect(color="Black", size=.8,fill=NA),
+  panel.background = element_rect(fill="White"),
+  panel.grid.major=element_blank(), 
+  panel.grid.minor=element_blank(),
+  axis.line=element_blank(),
+  axis.text=element_text(color="Black",size=20),
+  axis.title=element_text(color="Black",size=20),
+  strip.background = element_blank(),
+  strip.text.x = element_text(size = 20, color = "black"),
+  strip.text.y = element_text(size = 20, color = "black"),
+  text = element_text(size=20, color="black", family="serif"))
+```
+
+```{r data upload august, include=FALSE}
+d0<-read.csv("august-16 to aug-28.csv", header=T,na.strings="")
+a<-read.csv("treatment_assignment.csv", header=T,na.strings="")
+```
+
+```{r normalizing the data August, include=FALSE}
+#normalize the voltage data
+reverse_normalize <- function(X) {
+  oys <- ifelse(X < 500 | X > 800, NA, X)
+  (oys - max(oys, na.rm = TRUE)) / (min(oys, na.rm = TRUE) - max(oys, na.rm = TRUE))
+}
+# seperate out the oyster columns
+oysters <- grep('^oyst', colnames(d0), value = TRUE)
+# Apply the reverse normalization function to oyster columns
+d1 <- apply(d0[, oysters], 2, reverse_normalize)
+# Combine the normalized results into a new data frame
+d1 <- data.frame(d1)
+# add gape to oyster columns
+colnames(d1) <- paste(oysters, 'gape', sep = "_")
+# Combine d1 back into d0
+d0 <- data.frame(cbind(seconds = d0$seconds, Date_Time = mdy_hms(paste(d0$Date, d0$Timestamp, sep = " ")), d1))
+# view dataset
+head(d0)
+str(d0)
+#long format
+d0_long<- gather(d0, oyster_identity, gaping, oyster.1_gape:oyster.15_gape, factor_key=TRUE)
+#putting treatment and long data together
+df_long<-merge(d0_long, a, all=T)
+df_long<-df_long %>% 
+  filter(!is.na(gaping), !is.na(Crab_treatment)) %>% 
+  mutate(Hours=as.numeric(seconds)/60)
+str(df_long)
+```
+
+```{r graphing august line graph, echo=FALSE, fig.width= 10, fig.height=20, dpi=300, fig.cap="Oyster gaping over the first month of the study from August 16th to August 31st. Voltage data was normalized, leading to 1 on the y-axis representing fully open for that individual oyster, zero representing fully closed, and the range between them representing opening and closing behavior. Starting from the top of the figure is oyster number 1, and at the bottom is oyster number 15, all in numerical order from top to bottom. The colors represent the treatment that the individual was exposed to during the study. A blank in the data can be found on August 19th, when the monitoring device restarted."}
+df_long %>%
+  ggplot(aes(x = Date_Time, y = as.numeric(gaping), group = as.factor(Crab_treatment))) +
+  geom_line(aes(color = as.factor(Crab_treatment))) +
+  theme_bw() + theme(legend.position = "right") +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) +
+  xlab("") +
+  ylab("gaping") +
+  theme.oyster +
+  scale_color_manual(values = c("lightblue", "blue", "black")) +
+  guides(color = guide_legend(title = "Crab_treatment")) +
+  facet_grid(oyster_identity ~ .)
+```
+
+```{r data upload october, include=FALSE}
+d02<-read.csv("Oct-1 to Oct-13.csv", header=T,na.strings="") 
+a<-read.csv("treatment_assignment.csv", header=T,na.strings="")
+```
+
+```{r normalize the data October, include=FALSE}
+reverse_normalize <- function(X) {
+  oys <- ifelse(X < 500 | X > 800, NA, X)
+  (oys - max(oys, na.rm = TRUE)) / (min(oys, na.rm = TRUE) - max(oys, na.rm = TRUE))
+}
+
+# Extract oyster columns
+oysters <- grep('^oyst', colnames(d02), value = TRUE)
+# Apply the reverse normalization function to oyster columns
+d2 <- apply(d02[, oysters], 2, reverse_normalize)
+# Combine the normalized results into a new data frame
+d2 <- data.frame(d2)
+# Rename columns to indicate normalized values
+colnames(d2) <- paste(oysters, 'gape', sep = "_")
+# Combine the results back into the original data frame
+d02 <- data.frame(cbind(seconds = d02$seconds, Date_Time = mdy_hms(paste(d02$Date, d02$Timestamp, sep = " ")), d2))
+# Continue with the rest of your script using d02 as needed
+head(d02)
+str(d02)
+#get it into long format
+d02_long<- gather(d02, oyster_identity, gaping, oyster.1_gape:oyster.15_gape, factor_key=TRUE)
+
+#merge the new long data with the Crab_treatment dataframe for analysis and graphing
+df2_long<-merge(d02_long, a, all=T)
+df2_long<-df2_long %>% 
+  filter(!is.na(gaping), !is.na(Crab_treatment)) %>% 
+  mutate(Hours=as.numeric(seconds)/60)
+str(df2_long)
+```
+
+```{r graphing october line graph, echo=FALSE, fig.width= 10, fig.height=20, dpi=300,  fig.cap="The gaping behavior over time for each individual oyster during the month of October from October 1st to October 13th when the study concluded. The data was normalized for each individual oyster, ranging from 1, fully open for that individual, to 0, fully closed for that individual. The range between 0 and 1 represents the oyster's opening and closing behavior. The color represents the treatment that an individual was exposed to, and from top to bottom, oyster individuals are 1 through 15."}
+df2_long %>%
+  ggplot(aes(x = Date_Time, y = as.numeric(gaping), group = as.factor(Crab_treatment))) +
+  geom_line(aes(color = as.factor(Crab_treatment)))+
+  theme_bw() + theme(legend.position = "right") +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) +
+  xlab("") +
+  ylab("gaping") +
+  theme.oyster +
+  scale_color_manual(values = c("lightblue", "blue", "black")) +
+  guides(color = guide_legend(title = "Crab_treatment")) +
+  facet_grid(oyster_identity ~ .)
+```
+
+```{r setting up for august box plot, include=FALSE}
+percentage_above_0.25_August <- df_long %>%
+  group_by(Crab_treatment, oyster_identity) %>%
+  summarize(Percentage_of_Time_Spent_Open= sum(gaping > 0.25, na.rm = TRUE) / n()) %>%
+  mutate(Percentage_of_Time_Spent_Open= Percentage_of_Time_Spent_Open* 100)
+head(percentage_above_0.25_August)
+percentage_above_0.25_August$Crab_treatment <- as.factor(percentage_above_0.25_August$Crab_treatment)
+levels(percentage_above_0.25_August$Crab_treatment)
+
+ANOVA_on_Gaping_august <- aov(Percentage_of_Time_Spent_Open ~ Crab_treatment, data = percentage_above_0.25_August)
+
+Anova_results <- anova(ANOVA_on_Gaping_august)
+print(Anova_results)
+
+# Tukey's test
+tukey <- TukeyHSD(ANOVA_on_Gaping_august)
+print(tukey)
+
+
+cld <- multcompLetters4(ANOVA_on_Gaping_august, tukey)
+print(cld)
+
+August_percent_open <- group_by(percentage_above_0.25_August, Crab_treatment) %>%
+  summarise(mean=mean(Percentage_of_Time_Spent_Open), quant = quantile(Percentage_of_Time_Spent_Open, probs = 0.75)) %>%
+  arrange(desc(mean))
+
+# extracting the compact letter display and adding to the Tk table
+cld <- as.data.frame.list(cld$Crab_treatment)
+August_percent_open$cld <- cld$Letters
+```
+
+```{r box plot august with ANOVA, echo=FALSE, fig.cap="Crab treatment relation to the percentage of time spent open for each oyster within their respective groups. A threshold of 0.25 is set for identifying openness for each oyster due to sensor noise interference. The percentage of time open is in relation to the amount of time throughout the dataset for August that each oyster was recorded above 0.25, showing a gaping event. Averages across the group are used to identify the relation between treatments. August dataset has a p-value of 0.3057 for comparison between treatments."}
+
+ggplot(percentage_above_0.25_August, aes(Crab_treatment, Percentage_of_Time_Spent_Open)) + 
+  geom_boxplot(aes(fill = Crab_treatment), show.legend = FALSE) +
+  geom_point( color = "black") +
+  labs(x="Treatment Group", y="Percentage of Time Spent Open") +
+  theme_bw() + 
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) +
+  geom_text(data = August_percent_open, aes(x = Crab_treatment, y = quant, label = cld), size = 3, vjust=-1, hjust =-1)+
+  scale_fill_brewer(palette = "Blues")
+```
+
+```{r box plot for october, include=FALSE}
+percentage_above_0.25_October <- df2_long %>%
+  group_by(Crab_treatment, oyster_identity) %>%
+  summarize(Percentage_of_Time_Spent_Open= sum(gaping > 0.25, na.rm = TRUE) / n()) %>%
+  mutate(Percentage_of_Time_Spent_Open= Percentage_of_Time_Spent_Open* 100)
+head(percentage_above_0.25_October)
+percentage_above_0.25_October$Crab_treatment <- as.factor(percentage_above_0.25_October$Crab_treatment)
+levels(percentage_above_0.25_October$Crab_treatment)
+
+ANOVA_on_Gaping_october <- aov(Percentage_of_Time_Spent_Open ~ Crab_treatment, data = percentage_above_0.25_October)
+
+Anova_results2 <- anova(ANOVA_on_Gaping_october)
+print(Anova_results2)
+
+# Tukey's test
+tukey <- TukeyHSD(ANOVA_on_Gaping_october)
+
+
+cld <- multcompLetters4(ANOVA_on_Gaping_october, tukey)
+
+October_percent_open <- group_by(percentage_above_0.25_October, Crab_treatment) %>%
+  summarise(mean=mean(Percentage_of_Time_Spent_Open), quant = quantile(Percentage_of_Time_Spent_Open, probs = 0.75)) %>%
+  arrange(desc(mean))
+
+# extracting the compact letter display and adding to the Tk table
+cld <- as.data.frame.list(cld$Crab_treatment)
+October_percent_open$cld <- cld$Letters
+```
+
+```{r october box plot, echo=FALSE, fig.cap="Time spent open in relation to crab treatments over the October dataset. A threshold of 0.25 was set due to sensor noise interference. The percentage of time spent open in relation to the amount of time within the dataset of each oyster was recorded above 0.25, representing a gaping behavior. Each data point within the graph represents the percentage for each of the 15 oysters. October dataset has a p-value of 0.6588, providing no significant variation between the treatment groups."}
+ggplot(percentage_above_0.25_October, aes(Crab_treatment, Percentage_of_Time_Spent_Open)) + 
+  geom_boxplot(aes(fill = Crab_treatment), show.legend = FALSE) +
+  geom_point( color = "black") +
+  labs(x="Treatment Group", y="Percentage of Time Spent Open") +
+  theme_bw() + 
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) +
+  geom_text(data = October_percent_open, aes(x = Crab_treatment, y = quant, label = cld), size = 3, vjust=-1, hjust =-1)+
+  scale_fill_brewer(palette = "Blues")
+```
+
+```{r reading measurement data, include=FALSE}
+weights <- read.csv("oyster_crab_weight_measurements.csv", header=T, na.strings = "")
+```
+
+```{r graphing weights, echo=FALSE, fig.cap="Weight change in grams over the duration of the two month study based on measurements taken at the beginning and end of the experiment. A point on the graph represents each oyster's weight change, and their IDs are labeled to the right with the numbers representing which oyster they signify. Averages were taken for each group to allow comparisons between weight and treatment. Standard deviation error bars represent no significant difference between groups and variation within each group."}
+average_weights <- weights %>%
+  group_by(Treatment) %>%
+  summarize(weight_change_g = mean(wet_g_end - wet_g_start, na.rm = TRUE))
+
+# Calculate the mean and standard deviation for each Treatment group for error bars
+summary_data <- weights %>%
+  group_by(Treatment) %>%
+  summarise(
+mean_value = mean(weight_change_g),
+sd_value = sd(weight_change_g)
+  )
+# Merge the summary data back to the original dataset
+average_weights <- merge(average_weights, summary_data, by = "Treatment")
+#graph
+average_weights %>%
+  ggplot(aes(x = Treatment, y = weight_change_g)) +
+  geom_col(alpha = 0.7, linewidth = 3) +
+  geom_errorbar(aes(ymin = mean_value - sd_value, ymax = mean_value + sd_value), width = 0.2) +
+  geom_point(data = weights, aes(x = Treatment, y = weight_change_g, color = Oyster.ID), size = 3) +
+  labs(x = "Treatment", y = "Average Weight Change Throughout Experiment (g)", color = "Oyster ID") +
+  theme_classic()
+```
+
+```{r oyster length data upload, echo=FALSE, fig.cap="Length change over the duration of the two-month study based on forceps length measurements from the beginning and end of the study. Length change is grouped based on treatment, with averages for each group acquired to identify possible relations between length and treatment. Each point represents the change measured for an individual oyster from the start to the end of the experiment. Standard deviation error bars represent no significant difference between groups and variation within each group."}
+oyster_length <- read.csv("oyster_crab_weight_measurements.csv", header=T, na.strings = "")
+#making column of length difference
+oyster_length$length_change_mm <- oyster_length$entire.oyster_mm_end - oyster_length$entire.oyster_mm_start
+
+#grouping length change by treatment
+average_length_change <- oyster_length %>%
+  group_by(Treatment) %>%
+  summarize(length_change_mm = mean(entire.oyster_mm_end - entire.oyster_mm_start, na.rm = TRUE))
+#summarizing grouped data
+summary_data_2 <- oyster_length %>%
+  group_by(Treatment) %>%
+  summarise(
+mean_value2 = mean(length_change_mm),
+sd_value2 = sd(length_change_mm)
+  )
+
+average_length_change <- merge(average_length_change, summary_data_2, by = "Treatment")
+
+#length change graph
+average_length_change %>%
+  ggplot(aes(x = Treatment, y = length_change_mm)) +
+  geom_col(alpha = 0.7, linewidth = 3) +
+  geom_errorbar(aes(ymin = mean_value2 - sd_value2, ymax = mean_value2 + sd_value2), width = 0.2) +
+  geom_point(data = oyster_length, aes(x = Treatment, y = length_change_mm, color = Oyster.ID), size = 3) +
+  labs(x = "Treatment", y = "Average Length Change Throughout Experiment (mm)", color = "Oyster ID") +
+  theme_classic()
+```
